@@ -1,0 +1,176 @@
+/* 
+ * Alert Box Styling
+ * This stylesheet defines the appearance and animations for the Alerts component
+ * Including responsive behavior for all screen sizes
+ */
+
+/* Main alert container */
+.alert-box {
+    flex: 0 0 35%;
+    max-width: 40%;
+    background-color: var(--bg-black-900) !important;
+    border: 2px solid var(--theme-color);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(33, 150, 243, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Header styling */
+  .alert-box h1 {
+    color: var(--theme-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Bell icon animation - corrected animation name to match @keyframes */
+  .alert-box h1 i {
+    animation: bell-shake 2s infinite;
+  }
+  
+  /* Base alert styling */
+  .alert {
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+    border-left: 3px solid var(--theme-color);
+    margin-bottom: 15px;
+  }
+  
+  /* Hover effect for all alerts */
+  .alert:hover {
+    transform: translateX(5px);
+  }
+  
+  /* Individual alert type styling */
+  .alert-one {
+    background-color: lightgreen;
+    color: #000;
+  }
+  
+  .alert-two {
+    background-color: rgb(252, 255, 69);
+    color: #000;
+  }
+  
+  .alert-three {
+    background-color: lightyellow;
+    color: #000;
+  }
+  
+  .alert-four {
+    background-color: lightcoral;
+    color: #000;
+  }
+  
+  /* Link styling within alerts */
+  .alert a {
+    color: var(--theme-color);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .alert a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bell animation keyframes - smooth realistic bell movement */
+  @keyframes bell-shake {
+    0% { transform: rotate(0); }
+    5% { transform: rotate(15deg); }
+    10% { transform: rotate(-15deg); }
+    15% { transform: rotate(12deg); }
+    20% { transform: rotate(-12deg); }
+    25% { transform: rotate(9deg); }
+    30% { transform: rotate(-9deg); }
+    35% { transform: rotate(6deg); }
+    40% { transform: rotate(-6deg); }
+    45% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    55% { transform: rotate(1deg); }
+    60% { transform: rotate(-1deg); }
+    65% { transform: rotate(0); }
+    100% { transform: rotate(0); }
+  }
+  
+  /* Enhanced responsiveness with multiple breakpoints */
+  @media (max-width: 1200px) {
+    .alert-box {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .alert-box {
+      max-width: 70%;
+      flex: 0 0 70%;
+      padding: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .alert-box {
+      max-width: 85%;
+      flex: 0 0 85%;
+      padding: 15px;
+    }
+    
+    .alert-box h1 {
+      font-size: 22px;
+    }
+    
+    .alert {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .alert-box {
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding: 12px;
+      border-radius: 10px;
+    }
+    
+    .alert-box h1 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .alert {
+      padding: 10px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Additional small screen optimization */
+  @media (max-width: 400px) {
+    .alert-box {
+      padding: 10px;
+    }
+    
+    .alert-box h1 {
+      font-size: 18px;
+    }
+    
+    .alert {
+      padding: 8px;
+      font-size: 12px;
+    }
+  }

@@ -1,0 +1,49 @@
+    /* Apply theme colors */
+  body {
+    background-color: var(--bg-black-50);
+    transition: background 0.3s ease;
+    color: #000000;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  /* Ensure switcher icons are visible */
+  .day-night i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Color Options */
+  .color-options span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-options span[data-color="#ec1839"] {
+    background-color: #ec1839;
+  }
+  
+  .color-options span[data-color="#2196f3"] {
+    background-color: #2196f3;
+  }
+  
+  .color-options span[data-color="#ff5722"] {
+    background-color: #ff5722;
+  }
+  
+  .color-options span[data-color="#4caf50"] {
+    background-color: #4caf50;
+  }
+  
+  .color-options span[data-color="#4caf50"] {
+    background-color: #fa9dfe;
+  }
+  

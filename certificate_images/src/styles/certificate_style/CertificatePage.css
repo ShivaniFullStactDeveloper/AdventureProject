@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    background-color: #151515;
+    margin-left: 250px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+.certificate-heading{
+      font-size: 40px;
+      color: #EC1839;
+      font-weight: 700;
+      position: relative;
+      margin-top: 60px;
+      margin-left: 3.5vw;
+  }
+  .underline-one {
+    width: 80px;
+    height: 4px;
+    background-color: #EC1839;
+    margin-bottom: 0.4rem;
+    margin-left: 3.5vw;
+
+  }
+  .underline-two {
+    width: 40px;
+  }
